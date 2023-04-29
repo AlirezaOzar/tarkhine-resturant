@@ -1,0 +1,7 @@
+
+.ReactCollapse--collapse {
+    transition: height 500ms;
+}
+.about{
+    background-image: url(./assets/Rectangle.png);
+}
