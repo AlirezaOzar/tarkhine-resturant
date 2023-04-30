@@ -5,3 +5,8 @@
 .about{
     background-image: url(./assets/Rectangle.png);
 }
+.footer{
+    background-image: url(./assets/eggs.jpg);
+    background-size: cover;
+    background-position: center;
+}

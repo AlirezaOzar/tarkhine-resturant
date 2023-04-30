@@ -8,7 +8,7 @@ const Branches = () => {
     return (
         <div className="flex justify-center items-center flex-col">
             <h2 className="font-bold text-2xl">ترخینه گردی</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:flex-row items-center my-10 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:flex-row items-center px-4 my-10 gap-8">
                 <div className="flex flex-row md:flex-col max-w-[388px] md:max-w-[288px] max-h-[200px] md:max-h-[444px] rounded-lg border border-t-0">
                     <div className="w-1/2 md:w-full h-[150px] md:h-[288px] ">
                         <img src={branch1} className="w-full  h-full" />
