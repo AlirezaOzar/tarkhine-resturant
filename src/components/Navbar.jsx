@@ -3,9 +3,10 @@ import { Menu } from '@headlessui/react'
 import { useState } from 'react'
 import image1 from "../assets/Logo.png";
 import Acording from "./Acording";
+import { NavLink } from "react-router-dom";
 
 const AccordingData = [
-  { title: "شعبه ها", desc: "اکباتان" },
+  { title: "شعبه ها", desc: "اکباتان", to:"/ekbatan" },
   { title: "منو", desc: "پیتزا" },
 ]
 
@@ -37,7 +38,7 @@ const Navbar = () => {
               </div>
               <div>
                 {AccordingData.map((data, index) => {
-                  return <Acording toggle={() => toggle(index)} open={index === open} key={index} title={data.title} desc={data.desc} />
+                  return <Acording toggle={() => toggle(index)} open={index === open} key={index} title={data.title} desc={data.desc} to={data.to}/>
                 })}
                 <div className="px-5 flex flex-col items-center mt-6 gap-6">
                   <div className="hover:border-b py-2 hover:border-emerald-700 flex items-center gap-10">
@@ -64,7 +65,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="text-neutral-500 text-lg hidden lg:flex  items-center space-between gap-6">
-        <div className="font-semibold text-emerald-700 hover:border-b hover:border-emerald-700">صفحه ی اصلی</div>
+        <NavLink to="/" className="font-semibold text-emerald-700 hover:border-b hover:border-emerald-700">صفحه ی اصلی</NavLink>
         <div>
           <Menu className="w-full lg:max-w-[296px] cursor-pointer relative" as="div">
             <Menu.Button className="rounded py-2 flex justify-center items-center gap-2 w-full" onClick={() => setIsOpen(!isOpen)}>
@@ -79,7 +80,7 @@ const Navbar = () => {
             </Menu.Button>
             <Menu.Items className="list-none font-normal text-base px-4 py-2 absolute bg-white w-full border rounded border-t-0 text-center z-10">
               <Menu.Item as="li" className="cursor-pointerpy-2 font-medium">
-                اکباتان
+                 <NavLink to="/ekbatan">اکباتان</NavLink>
               </Menu.Item>
             </Menu.Items>
           </Menu>

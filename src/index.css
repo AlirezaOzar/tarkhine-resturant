@@ -10,6 +10,10 @@ body{
   font-family: estedad ;
   src: url(./assets/Estedad-Medium.ttf);
 }
+:root {
+  --swiper-navigation-size: 34px;
+  --swiper-theme-color: #065f46;
+}
 
 /* Code By www.FontYar.com - The Best Persian Fonts Directory */
 
