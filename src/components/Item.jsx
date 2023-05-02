@@ -1,13 +1,13 @@
 import {Heart,Star1} from "iconsax-react";
 import Star from "../assets/Star.png";
-const Item = ({name,score,scoreText,image,price,discountPercent,discount}) => {
+const Item = ({name,score,scoreText,image,price,discountPercent,discount,item}) => {
     return ( 
-     <div className=" overflow-hidden">
-         <div className=" border flex flex-col max-w-[288px] m-5 rounded bg-white">
-          <div className="max-w-[288px] h-[256px] mb-4">
+     <div >
+         <div className=" border flex flex-col md:w-[288px] m-5 rounded bg-white">
+          <div className="max-w-[388px] h-[256px] mb-4">
               <img src={image} alt=""  className="w-full h-full rounded-t"/>
           </div>
-          <p className="text-xl font-semibold">{name}</p>
+          <p className="text-xl font-semibold px-3">{name}</p>
           <div className="text-sm flex justify-between items-center px-2 py-2">
             <div className="flex gap-1 items-center text-xs text-neutral-500">
                 <Heart/>

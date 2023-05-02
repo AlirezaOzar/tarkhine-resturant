@@ -89,7 +89,7 @@ const Navbar = () => {
           <Menu className="w-full lg:max-w-[296px] cursor-pointer relative" as="div">
             <Menu.Button className="rounded py-2 flex justify-center items-center gap-2 w-full" onClick={() => setIsOpened(!isOpened)}>
               <div className=" font-medium text-sm">
-                <div className="text-lg">منو</div>
+                <NavLink to="/menu" className="text-lg">منو</NavLink>
               </div>
               {isOpened ? (
                 <ArrowUp2 className=' text-neutral-500' />

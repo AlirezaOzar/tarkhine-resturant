@@ -59,6 +59,7 @@ const EkbatanProducts = () => {
             image={item.image}
             discount={item.discount}
             discountPercent={item.discountPercent}
+            item={item}
             />
              </SwiperSlide>
            )).slice(0,5)}

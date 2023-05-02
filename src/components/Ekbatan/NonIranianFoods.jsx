@@ -65,7 +65,7 @@ const NonIranianFoods = () => {
      
       </Swiper>
 
-      <NavLink className='w-full flex justify-center items-center mt-4'>
+      <NavLink to="/menu" className='w-full flex justify-center items-center mt-4'>
         <button className='flex gap-3 items-center border border-emerald-700 text-emerald-700 bg-white py-1 px-3 rounded-md hover:bg-emerald-700 hover:text-white transition-all'>
          <p>مشاهده منوی کامل</p>
          <NoteText/>

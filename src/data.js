@@ -8,6 +8,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/c2661f398456aa85d28512a263784b30_skd.jpg",
         discount:"220,000",
         discountPercent:"8%",
+        category:"Appetizer",
     },
     {
         id:2,
@@ -18,6 +19,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/8ba5e6d1e9dea1c38b0c48a10f4d4b80_if7h.jpg",
         discount:"160,000",
         discountPercent:"20%",
+        category:"mainCourse",
     },
     {
         id:3,
@@ -28,6 +30,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/ff91cf5d686e094cf503cd839c817fb1_eixo.jpg",
         discount:"210,000",
         discountPercent:"20%",
+        category:"",
     },
     {
         id:4,
@@ -38,6 +41,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/6ec5eedf11eeb05d796da8fcbecf3c3a_dpk2.jpg",
         discount:"200,000",
         discountPercent:"13%",
+        category:"fastFood",
     },
     {
         id:5,
@@ -48,6 +52,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/2daf6bbbdd1384685906c5b1b221dc15_rddh.jpg",
         discount:"130,000",
         discountPercent:"15%",
+        category:"mainCourse",
     },
     {
         id:6,
@@ -58,6 +63,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/f303fe607ca656cb28eff07a6f319861_hgp5.jpg",
         discount:"210,000",
         discountPercent:"15%",
+        category:"Appetizer",
     },
     {
         id:7,
@@ -68,6 +74,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/dda7ea0a453ff25e151caacc1b5d7d05_zzeb.jpg",
         discount:"180,000",
         discountPercent:"40%",
+        category:"fastFood",
     },
     {
         id:8,
@@ -78,6 +85,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/700b51d49560be17c00c10db85983b9a_4bg8.jpg",
         discount:"180,000",
         discountPercent:"45%",
+        category:"mainCourse",
     },
     {
         id:9,
@@ -88,6 +96,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/48db48f537dffd7307d5d3b282e1dea6_i5r.jpg",
         discount:"170,000",
         discountPercent:"22%",
+        category:"mainCourse",
     },
     {
         id:10,
@@ -98,6 +107,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/5995f3e0846d32c6972985838268b14b_bjl4.jpg",
         discount:"100,000",
         discountPercent:"15%",
+        category:"Appetizer",
     },
     {
         id:11,
@@ -108,6 +118,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/9ff0803b62a8ed0b875974ff6365bf72_3rfe.jpg",
         discount:"100,000",
         discountPercent:"15%",
+        category:"Seafood",
     },
     {
         id:12,
@@ -118,6 +129,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/597a46ac8edfb8174c2005934b1fb1d7_wtnv.jpg",
         discount:"125,000",
         discountPercent:"8%",
+        category:"Appetizer",
     },
     {
         id:13,
@@ -128,6 +140,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/f1087c8549c06b048d654b764857dc2e_4xsd.jpg",
         discount:"180,000",
         discountPercent:"5%",
+        category:"fastFood",
     },
     {
         id:14,
@@ -138,6 +151,7 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/700b51d49560be17c00c10db85983b9a_4bg8.jpg",
         discount:"100,000",
         discountPercent:"15%",
+        category:"mainCourse",
     },
     {
         id:15,
@@ -148,5 +162,28 @@ export const productsData = [
         image:"https://s8.uupload.ir/files/d9d4333a97f111600c9eca045f184d06_jvq.jpg",
         discount:"100,000",
         discountPercent:"15%",
+        category:"Appetizer",
+    },
+    {
+        id:16,
+        name:"پیتزای مارگاریتا",
+        price:"185,000",
+        score:"4",
+        scoreText:"(75 امتیاز)",
+        image:"https://s8.uupload.ir/files/margarita_8kmt.png",
+        discount:"100,000",
+        discountPercent:"60%",
+        category:"fastFood",
+    },
+    {
+        id:17,
+        name:"پیتزای پنیر",
+        price:"145,000",
+        score:"4",
+        scoreText:"(75 امتیاز)",
+        image:"https://s8.uupload.ir/files/d3bcc9bcc0dd13a67a0a653cdee536ec_j8f9.jpg",
+        discount:"100,000",
+        discountPercent:"60%",
+        category:"fastFood",
     },
 ]

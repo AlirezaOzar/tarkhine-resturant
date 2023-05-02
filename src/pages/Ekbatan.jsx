@@ -3,7 +3,7 @@ import EkbatanProducts from "../components/Ekbatan/EkbatanProudcts";
 import NonIranianFoods from "../components/Ekbatan/NonIranianFoods";
 import PopularFoods from "../components/Ekbatan/PopularFoods";
 import UserOpinion from "../components/Ekbatan/UserOpinion";
-import SwiperCaresoul from "../components/SwiperCaresoul";
+import SwiperCaresoul from "../components/Ekbatan/SwiperCaresoul";
 import Layout from "./Layout";
 
 const Ekbatan = () => {
