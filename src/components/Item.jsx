@@ -3,7 +3,7 @@ import Star from "../assets/Star.png";
 const Item = ({name,score,scoreText,image,price,discountPercent,discount}) => {
     return ( 
      <div className=" overflow-hidden">
-         <div className=" border flex flex-col max-w-[288px] m-5 rounded">
+         <div className=" border flex flex-col max-w-[288px] m-5 rounded bg-white">
           <div className="max-w-[288px] h-[256px] mb-4">
               <img src={image} alt=""  className="w-full h-full rounded-t"/>
           </div>
