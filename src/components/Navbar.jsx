@@ -115,9 +115,9 @@ const Navbar = () => {
         <div className=" bg-emerald-50 p-2 rounded-lg text-emerald-800 hover:bg-emerald-100 transition-all cursor-pointer">
           <User />
         </div>
-        <div className=" bg-emerald-50 p-2 rounded-lg text-emerald-800 hover:bg-emerald-100 transition-all cursor-pointer">
+        <NavLink to="/shopping-card" className=" bg-emerald-50 p-2 rounded-lg text-emerald-800 hover:bg-emerald-100 transition-all cursor-pointer">
           <ShoppingCart />
-        </div>
+        </NavLink>
         <div className="hidden md:flex bg-emerald-50 p-2 rounded-lg text-emerald-800 hover:bg-emerald-100 transition-all cursor-pointer">
           <SearchNormal />
         </div>
