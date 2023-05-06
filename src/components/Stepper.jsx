@@ -8,7 +8,7 @@ const Stepper = () => {
     const [complete , setComplete] = useState(false);
     return ( 
        <div className="flex-col hidden md:flex">
-        <div className="flex justify-between">
+        <div className="flex justify-between mb-6">
           {steps?.map((step,i) => (
             <div key={i} className={`step-item ${currentStep === i + 1 && "active"} ${(i + 1 < currentStep || complete) && "complete"}`}>
               <div className="step">
@@ -18,7 +18,7 @@ const Stepper = () => {
             </div>
           ))}
         </div>
-        <button className="btn" onClick={() => setCurrentStep((prev) => prev + 1)}>Next</button>
+        <button className="btn hidden" onClick={() => setCurrentStep((prev) => prev + 1)}>Next</button>
        </div>
      );
 }

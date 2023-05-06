@@ -2,7 +2,7 @@ export const productsData = [
     {
         id:1,
         name:"دلمه برگ کلم",
-        price:"209,000",
+        price:209000,
         score:"5",
         scoreText:"(52 امتیاز)",
         image:"https://s8.uupload.ir/files/c2661f398456aa85d28512a263784b30_skd.jpg",
@@ -13,7 +13,7 @@ export const productsData = [
     {
         id:2,
         name:"بادمجان شکم پر",
-        price:"136,000",
+        price:136000,
         score:"4",
         scoreText:"(32 امتیاز)",
         image:"https://s8.uupload.ir/files/8ba5e6d1e9dea1c38b0c48a10f4d4b80_if7h.jpg",
@@ -24,7 +24,7 @@ export const productsData = [
     {
         id:3,
         name:"کالزونه اسفناج",
-        price:"177,000",
+        price:177000,
         score:"5",
         scoreText:"(62 امتیاز)",
         image:"https://s8.uupload.ir/files/ff91cf5d686e094cf503cd839c817fb1_eixo.jpg",
@@ -35,7 +35,7 @@ export const productsData = [
     {
         id:4,
         name:"پیتزا قارچ",
-        price:"177,000",
+        price:177000,
         score:"3",
         scoreText:"(33 امتیاز)",
         image:"https://s8.uupload.ir/files/6ec5eedf11eeb05d796da8fcbecf3c3a_dpk2.jpg",
@@ -46,7 +46,7 @@ export const productsData = [
     {
         id:5,
         name:"پاستا سبزیجات",
-        price:"117,000",
+        price:117000,
         score:"4",
         scoreText:"(44 امتیاز)",
         image:"https://s8.uupload.ir/files/2daf6bbbdd1384685906c5b1b221dc15_rddh.jpg",
@@ -57,7 +57,7 @@ export const productsData = [
     {
         id:6,
         name:"پنینی اسفناج",
-        price:"190,000",
+        price:190000,
         score:"3",
         scoreText:"(20 امتیاز)",
         image:"https://s8.uupload.ir/files/f303fe607ca656cb28eff07a6f319861_hgp5.jpg",
@@ -68,7 +68,7 @@ export const productsData = [
     {
         id:7,
         name:"پیتزا پپرونی",
-        price:"100,000",
+        price:100000,
         score:"4",
         scoreText:"(54 امتیاز)",
         image:"https://s8.uupload.ir/files/dda7ea0a453ff25e151caacc1b5d7d05_zzeb.jpg",
@@ -79,7 +79,7 @@ export const productsData = [
     {
         id:8,
         name:"راتاتویی",
-        price:"95,000",
+        price:9500,
         score:"4",
         scoreText:"(44 امتیاز)",
         image:"https://s8.uupload.ir/files/700b51d49560be17c00c10db85983b9a_4bg8.jpg",
@@ -90,7 +90,7 @@ export const productsData = [
     {
         id:9,
         name:"بورانی بادمجان",
-        price:"148,000",
+        price:148000,
         score:"5",
         scoreText:"(75 امتیاز)",
         image:"https://s8.uupload.ir/files/48db48f537dffd7307d5d3b282e1dea6_i5r.jpg",
@@ -101,7 +101,7 @@ export const productsData = [
     {
         id:10,
         name:"غذای گیاهی",
-        price:"85,000",
+        price:8500,
         score:"4",
         scoreText:"(75 امتیاز)",
         image:"https://s8.uupload.ir/files/5995f3e0846d32c6972985838268b14b_bjl4.jpg",
@@ -112,7 +112,7 @@ export const productsData = [
     {
         id:11,
         name:"سوشی",
-        price:"85,000",
+        price:8500,
         score:"4",
         scoreText:"(75 امتیاز)",
         image:"https://s8.uupload.ir/files/9ff0803b62a8ed0b875974ff6365bf72_3rfe.jpg",
@@ -123,7 +123,7 @@ export const productsData = [
     {
         id:12,
         name:"پاکورا سبزیجات",
-        price:"110,000",
+        price:110000,
         score:"4",
         scoreText:"(75 امتیاز)",
         image:"https://s8.uupload.ir/files/597a46ac8edfb8174c2005934b1fb1d7_wtnv.jpg",
@@ -134,7 +134,7 @@ export const productsData = [
     {
         id:13,
         name:"لازانیا",
-        price:"150,000",
+        price:150000,
         score:"4",
         scoreText:"(75 امتیاز)",
         image:"https://s8.uupload.ir/files/f1087c8549c06b048d654b764857dc2e_4xsd.jpg",
@@ -145,7 +145,7 @@ export const productsData = [
     {
         id:14,
         name:"راتاتویی",
-        price:"85,000",
+        price:8500,
         score:"4",
         scoreText:"(75 امتیاز)",
         image:"https://s8.uupload.ir/files/700b51d49560be17c00c10db85983b9a_4bg8.jpg",
@@ -156,7 +156,7 @@ export const productsData = [
     {
         id:15,
         name:"غذای گیاهی",
-        price:"85,000",
+        price:8500,
         score:"4",
         scoreText:"(75 امتیاز)",
         image:"https://s8.uupload.ir/files/d9d4333a97f111600c9eca045f184d06_jvq.jpg",
@@ -167,7 +167,7 @@ export const productsData = [
     {
         id:16,
         name:"پیتزای مارگاریتا",
-        price:"185,000",
+        price:185000,
         score:"4",
         scoreText:"(75 امتیاز)",
         image:"https://s8.uupload.ir/files/margarita_8kmt.png",
@@ -178,7 +178,7 @@ export const productsData = [
     {
         id:17,
         name:"پیتزای پنیر",
-        price:"145,000",
+        price:145000,
         score:"4",
         scoreText:"(75 امتیاز)",
         image:"https://s8.uupload.ir/files/d3bcc9bcc0dd13a67a0a653cdee536ec_j8f9.jpg",
