@@ -4,10 +4,12 @@ import { useState } from 'react'
 import image1 from "../assets/Logo.png";
 import Acording from "./Acording";
 import { NavLink } from "react-router-dom";
+import {useSelector} from "react-redux";
+
 
 const AccordingData = [
   { title: "شعبه ها", desc: "اکباتان", to:"/ekbatan" },
-  { title: "منو", desc: "پیتزا" },
+  { title: "منو", desc: "منوی غذاها",  to: "/menu"},
 ]
 
 
@@ -16,6 +18,7 @@ const Navbar = () => {
   const [isOpened, setIsOpened] = useState(false);
   const [menu, setMenu] = useState(false);
   const [open, setOpen] = useState(false);
+  const cart = useSelector((state) => state.cart.cart);
 
   const toggle = (index) => {
     if (open === index) {
@@ -99,15 +102,12 @@ const Navbar = () => {
             </Menu.Button>
             <Menu.Items className="w-[100px] list-none font-normal text-base py-3 px-4 absolute bg-white  border rounded border-t-0 text-center z-10">
               <Menu.Item as="li" className="cursor-pointerpy-2 font-medium">
-                اکباتان
-              </Menu.Item>
-              <Menu.Item as="li" className="cursor-pointerpy-2 font-medium pt-5">
-                اکباتان
+                 منو
               </Menu.Item>
             </Menu.Items>
           </Menu>
         </div>
-        <div className="hover:border-b hover:border-emerald-700">اعطای نمایندگی</div>
+        <NavLink to="/deputize" className="hover:border-b hover:border-emerald-700">اعطای نمایندگی</NavLink>
         <div className="hover:border-b hover:border-emerald-700">درباره ما</div>
         <div className="hover:border-b hover:border-emerald-700">تماس با ما</div>
       </div>
@@ -115,7 +115,8 @@ const Navbar = () => {
         <div className=" bg-emerald-50 p-2 rounded-lg text-emerald-800 hover:bg-emerald-100 transition-all cursor-pointer">
           <User />
         </div>
-        <NavLink to="/shopping-card" className=" bg-emerald-50 p-2 rounded-lg text-emerald-800 hover:bg-emerald-100 transition-all cursor-pointer">
+        <NavLink to="/shopping-card" className="relative bg-emerald-50 p-2 rounded-lg text-emerald-800 hover:bg-emerald-100 transition-all cursor-pointer">
+          {cart.length ? <span className="absolute bg-emerald-700 text-white top-0 right-0 flex items-center justify-center  w-[17px] h-[17px] text-xs rounded-full">{cart.length}</span> : null}
           <ShoppingCart />
         </NavLink>
         <div className="hidden md:flex bg-emerald-50 p-2 rounded-lg text-emerald-800 hover:bg-emerald-100 transition-all cursor-pointer">

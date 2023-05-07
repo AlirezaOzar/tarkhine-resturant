@@ -4,14 +4,25 @@ import Item from "../Item";
 import * as data from "../../data";
 import {SearchNormal,ShoppingCart} from "iconsax-react";
 import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import {search} from "../../state/index";
 
 
 
 const MenuTabs = () => {
   const [value, setValue] = useState("all");
+  const dispatch = useDispatch();
+  const [searchValue , setSearchValue] = useState("");
+
   const isNoneMobile = useMediaQuery("(min-width:600px)");
   const handelChange = (event, newValue) => {
     setValue(newValue)
+  }
+
+  const changeHandler = (e) => {
+   dispatch(search({event: e}))
+   setSearchValue(e.target.value)
+   console.log(e.target.value)
   }
   const mainCourse = data.productsData.filter((item) => item.category === "mainCourse");
   const Appetizer = data.productsData.filter((item) => item.category === "Appetizer");
@@ -48,14 +59,14 @@ const MenuTabs = () => {
       </Tabs>
       <div className='flex w-full justify-center items-center gap-5 flex-col md:flex-row'>
        <div className='flex md:w-[400px] justify-center items-center relative'>
-          <input type="text" className='border-2 focus:ring-emerald-700 focus:ring focus:outline-none text-xs px-3 py-3 border-emerald-700 rounded md:w-[400px] md:h-[40px] placeholder:text-emerald-700'placeholder='جستجو....' />
+          <input type="text" onChange={changeHandler} value={searchValue} className='border-2 focus:ring-emerald-700 focus:ring focus:outline-none text-xs px-3 py-3 border-emerald-700 rounded md:w-[400px] md:h-[40px] placeholder:text-emerald-700'placeholder='جستجو....' />
           <SearchNormal className='text-emerald-700 absolute left-3'/>
        </div>
        <NavLink>
-        <button className='flex gap-3 items-center border border-emerald-700 text-emerald-700 bg-white py-1 px-3 rounded-md hover:bg-emerald-700 hover:text-white transition-all'>
+        <NavLink to="/shopping-card" className='flex gap-3 items-center border border-emerald-700 text-emerald-700 bg-white py-1 px-3 rounded-md hover:bg-emerald-700 hover:text-white transition-all'>
          <p>تکمیل خرید</p>
          <ShoppingCart/>
-        </button>
+        </NavLink>
       </NavLink>
       </div>
       <Box

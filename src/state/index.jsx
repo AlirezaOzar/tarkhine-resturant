@@ -1,9 +1,10 @@
 import {createSlice} from "@reduxjs/toolkit";
-
+import { productsData } from "../data";
 
 const initialState = {
     cart: [],
     items: [],
+    productsData,
 }
 
 export const cartSlice = createSlice({
@@ -44,6 +45,16 @@ export const cartSlice = createSlice({
                 }
                 return item;
             })
+        },
+        search: (state, action) => {
+            const value = action.type.target.value;
+            if(value === ""){
+                return state;
+            } else {
+                const filterProducts = state.filter((p) => 
+                p.name.toLowerCase().includes(value.toLowerCase()))
+                return filterProducts;
+            }
         }
     }
 })
@@ -54,5 +65,6 @@ export const {
     addToCart,
     decreaseCount,
     increaseCount,
+    search,
 } = cartSlice.actions;
 export default cartSlice.reducer;
